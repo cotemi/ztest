@@ -9,13 +9,8 @@ const fileList = [
 fileList.map((e)=>{
     const file = zlib.gzipSync(fs.readFileSync(path.join(__dirname, e)));
     fs.writeFileSync(e + '.gz', file);
+
+    //log mem length
+    // const mem = JSON.parse(fs.readFileSync(e));
+    // console.log(mem['mem'].length);
 })
-
-// const file = zlib.gunzipSync(
-//   fs.readFileSync(path.join(__dirname, "beehive_20231106_mem_summary.json.gz"))
-// );
-
-// const file2 = fs.readFileSync(path.join(__dirname, "beehive_20231106_mem_summary.json"))
-
-// console.log(file.byteLength)
-// console.log(file2.byteLength)
