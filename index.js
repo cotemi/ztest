@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 
 const fileList = [
-  "customer_data.json",
+  "test.json",
 ];
 
 fileList.map((e)=>{
