@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 
 const fileList = [
-  "beehive_membership_20231213.json",
+  "customer_data_12_21.json",
 ];
 
 fileList.map((e)=>{
